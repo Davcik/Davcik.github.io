@@ -1,8 +1,8 @@
 # davcik.github.io
 
-Personal academic website of Nebojša S. Davčik, published free of charge with GitHub Pages.
+Personal academic website of Nebojša S. Davčik, published with GitHub Pages.
 
-The site is plain HTML and CSS. There is no build step, no Jekyll theme and no third-party tracking or font requests.
+The site is plain HTML and CSS. There is no build step, no Jekyll theme, or no third-party tracking or font requests.
 
 ## Files
 
