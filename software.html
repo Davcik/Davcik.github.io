@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Software · Nebojša S. Davčik</title>
+  <meta name="description" content="Open-source Stata modules and research tools by Nebojša S. Davčik, including litdiscover and littext on SSC.">
+  <meta name="author" content="Nebojša S. Davčik">
+  <link rel="canonical" href="https://davcik.github.io/software.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Software · Nebojša S. Davčik">
+  <meta property="og:description" content="Open-source Stata modules and research tools by Nebojša S. Davčik, including litdiscover and littext on SSC.">
+  <meta property="og:url" content="https://davcik.github.io/software.html">
+  <meta property="og:image" content="https://davcik.github.io/assets/img/davcik-og.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="assets/fonts/spectral-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap">
+      <div class="topline">
+        <a class="brand" href="index.html">
+          <span class="brand-name">Nebojša S. Davčik</span>
+          <span class="brand-role">Associate Professor of Marketing · EM Normandie Business School, Oxford</span>
+        </a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch between light and dark appearance" title="Light or dark appearance"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
+      </div>
+      <nav class="nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research &amp; Projects</a></li>
+        <li><a href="policy.html">Public Policy</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="software.html" aria-current="page">Software</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Software</p>
+        <h1>Software</h1>
+        <p class="lede">Open-source tools for literature review, text analysis and document forensics. The Stata modules are distributed through the Statistical Software Components (SSC) archive at Boston College.</p>
+      </header>
+      <div class="ledger">
+        <section class="ledger-section">
+          <h2>Stata modules</h2>
+          <div class="content">
+            <ul class="tool-list">
+              <li class="tool">
+                <div class="tool-head"><h3>litdiscover</h3><span class="tool-platform">Stata 19 with Python</span></div>
+                <p>Theory-aware literature review, analysis and discovery. Combines latent Dirichlet allocation topic modelling of abstracts with researcher-coded fields (theory, variables, context, method, year) to produce cross-tabulations, TCCM and ADO framework outputs, network measures and interactive figures for systematic reviews.</p>
+                <div class="cmd"><code id="cmd-litdiscover">ssc install litdiscover</code><button type="button" class="copy" data-copy="#cmd-litdiscover">Copy</button></div>
+                <div class="tool-links"><a href="https://github.com/Davcik/litdiscover">GitHub</a> <a href="https://ideas.repec.org/c/boc/bocode/s459718.html">RePEc / SSC entry</a></div>
+              </li>
+              <li class="tool">
+                <div class="tool-head"><h3>littext</h3><span class="tool-platform">Stata 19 with Python</span></div>
+                <p>Automated construct discovery and relationship inference from academic text.</p>
+                <div class="cmd"><code id="cmd-littext">ssc install littext</code><button type="button" class="copy" data-copy="#cmd-littext">Copy</button></div>
+                <div class="tool-links"><a href="https://github.com/Davcik/littext">GitHub</a> <a href="https://ideas.repec.org/c/boc/bocode/s459756.html">RePEc / SSC entry</a> <a href="https://doi.org/10.13140/RG.2.2.15239.97442">DOI</a></div>
+              </li>
+              <li class="tool">
+                <div class="tool-head"><h3>litnetwork</h3><span class="tool-platform">Stata 19 with Python</span> <span class="status">In development</span></div>
+                <p>Network analysis for literature reviews.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="ledger-section">
+          <h2>Research tools</h2>
+          <div class="content">
+            <ul class="tool-list">
+              <li class="tool">
+                <div class="tool-head"><h3>transcriber</h3><span class="tool-platform">Python</span></div>
+                <p>Speaker-labelled transcription of a single audio file. Uses OpenAI Whisper for transcription, Resemblyzer voice embeddings and agglomerative clustering to attribute each segment to a speaker. MIT licence.</p>
+                <div class="tool-links"><a href="https://github.com/Davcik/transcriber">GitHub</a></div>
+              </li>
+              <li class="tool">
+                <div class="tool-head"><h3>HTD Analyzer</h3><span class="tool-platform">Windows · C# and Python</span></div>
+                <p>Identifies and reveals concealed text in PDF, Word and Excel documents, using heuristics such as micro-fonts, near-white text and hidden-text attributes.</p>
+                <div class="tool-links"><a href="https://zenodo.org/records/18217095">Zenodo</a> <a href="https://github.com/Davcik/HTD-Analyzer">GitHub</a></div>
+              </li>
+              <li class="tool">
+                <div class="tool-head"><h3>DesktopSearchApp</h3><span class="tool-platform">Windows · C#</span></div>
+                <p>Indexes and searches local documents quickly, reliably and transparently.</p>
+                <div class="tool-links"><a href="https://doi.org/10.5281/zenodo.19643653">DOI</a></div>
+              </li>
+              <li class="tool">
+                <div class="tool-head"><h3>LLM-text-detection</h3><span class="tool-platform">Python</span></div>
+                <p>Code for text analysis and the detection of LLM prompting.</p>
+                <div class="tool-links"><a href="https://github.com/Davcik/LLM-text-detection">GitHub</a></div>
+              </li>
+              <li class="tool">
+                <div class="tool-head"><h3>Hidden-text</h3><span class="tool-platform">Python</span></div>
+                <p>Research code for identifying hidden text in Word and PDF documents.</p>
+                <div class="tool-links"><a href="https://github.com/Davcik/Hidden-text">GitHub</a></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="ledger-section">
+          <h2>Replication code</h2>
+          <div class="content">
+            <ul class="tool-list">
+              <li class="tool">
+                <div class="tool-head"><h3>Brand elasticities</h3><span class="tool-platform">Stata</span></div>
+                <p>Aggregates raw data into brand-level data to estimate the effect of a 1% change in brand prices.</p>
+                <div class="tool-links"><a href="https://doi.org/10.5281/zenodo.17625645">DOI</a></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="ledger-section">
+          <h2>How to cite</h2>
+          <div class="content">
+            <ul class="refs">
+              <li class="ref"><span class="me">Davcik, N. S.</span> (2026). <cite>LITDISCOVER: Stata module for theory-aware literature review, analysis, and discovery</cite> (Statistical Software Components S459718) [Computer software]. Boston College Department of Economics. <a href="https://ideas.repec.org/c/boc/bocode/s459718.html">https://ideas.repec.org/c/boc/bocode/s459718.html</a></li>
+              <li class="ref"><span class="me">Davcik, N. S.</span> (2026). <cite>LITTEXT: Stata module to automate construct discovery and relationship inference from an academic text</cite> (Statistical Software Components S459756) [Computer software]. Boston College Department of Economics. <a href="https://ideas.repec.org/c/boc/bocode/s459756.html">https://ideas.repec.org/c/boc/bocode/s459756.html</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="ledger-section">
+          <h2>Statistical software</h2>
+          <div class="content">
+            <p>Stata, SPSS, LISREL, AMOS and SmartPLS. All public code is on <a href="https://github.com/Davcik">GitHub</a>.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>© 2026 Nebojša S. Davčik. Last updated October 2026.</p>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?user=_TyiCq4AAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0003-1041-8788">ORCID</a></li>
+        <li><a href="https://github.com/Davcik">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/davcik/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

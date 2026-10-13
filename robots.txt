@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davcik.github.io/sitemap.xml
