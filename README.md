@@ -14,6 +14,7 @@ The site is plain HTML and CSS. There is no build step, no Jekyll theme and no t
 | `teaching.html` | Teaching |
 | `publications.html` | Publications |
 | `software.html` | Software |
+| `working-papers.html` | Working papers & Essays |
 | `cv.html` | CV (summary; no download) |
 | `contact.html` | Contact |
 | `assets/style.css` | Design: colours, fonts, layout |
