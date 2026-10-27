@@ -242,3 +242,13 @@ details[open] summary { margin-bottom: 1rem; }
 .pdoc-meta .kind { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
 .pdoc-cites { font-size: 0.9375rem; margin-top: 0.15rem; }
 .note { color: var(--muted); font-size: 0.9375rem; }
+/* Working papers */
+.wp { display: grid; gap: 0.9rem; }
+.wp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.9rem; font-family: var(--mono); font-size: 0.8125rem; color: var(--muted); }
+.wp-title { font-size: var(--step-2); line-height: 1.25; }
+.wp-title a { color: var(--ink); text-decoration-color: var(--rule); }
+.wp-title a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.wp-authors { color: var(--muted); font-size: 0.9375rem; }
+.wp > p:not([class]) { max-width: var(--measure); }
+.wp-kv { font-size: 0.9375rem; }
+.wp .bio-box p { font-family: var(--display); font-size: 1rem; }
